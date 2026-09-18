@@ -1,0 +1,116 @@
+{
+  "network": "simulated 10 Mbps, 80ms latency, cold cache",
+  "cpu": "4x slowdown on desktop CPU, same desktop GPU; not a phone",
+  "load": {
+    "readyMs": 3509.0999999940395,
+    "resources": [
+      {
+        "name": "/style.css",
+        "bytes": 8285,
+        "duration": 113.19999998807907
+      },
+      {
+        "name": "/app.js",
+        "bytes": 11328,
+        "duration": 114.2000000178814
+      },
+      {
+        "name": "/three.module.min.js",
+        "bytes": 338908,
+        "duration": 396.09999999403954
+      },
+      {
+        "name": "/engine.js",
+        "bytes": 5531,
+        "duration": 109.30000001192093
+      },
+      {
+        "name": "/scenes.js",
+        "bytes": 8262,
+        "duration": 121.7999999821186
+      },
+      {
+        "name": "/three.core.min.js",
+        "bytes": 381124,
+        "duration": 414.7000000178814
+      }
+    ],
+    "navigation": {
+      "name": "http://127.0.0.1:4173/",
+      "entryType": "navigation",
+      "startTime": 0,
+      "duration": 3966.899999976158,
+      "navigationId": 5354,
+      "initiatorType": "navigation",
+      "deliveryType": "",
+      "nextHopProtocol": "http/1.1",
+      "renderBlockingStatus": "non-blocking",
+      "contentType": "text/html",
+      "contentEncoding": "",
+      "workerStart": 0,
+      "workerRouterEvaluationStart": 0,
+      "workerCacheLookupStart": 0,
+      "workerMatchedSourceType": "",
+      "workerFinalSourceType": "",
+      "redirectStart": 0,
+      "redirectEnd": 0,
+      "fetchStart": 3.0999999940395355,
+      "domainLookupStart": 3.0999999940395355,
+      "domainLookupEnd": 3.0999999940395355,
+      "connectStart": 3.0999999940395355,
+      "secureConnectionStart": 0,
+      "connectEnd": 3.0999999940395355,
+      "requestStart": 5.299999982118607,
+      "responseStart": 11.399999976158142,
+      "firstInterimResponseStart": 0,
+      "finalResponseHeadersStart": 11.399999976158142,
+      "responseEnd": 94.09999999403954,
+      "transferSize": 5877,
+      "encodedBodySize": 5577,
+      "decodedBodySize": 5577,
+      "responseStatus": 200,
+      "serverTiming": [],
+      "unloadEventStart": 0,
+      "unloadEventEnd": 0,
+      "domInteractive": 228.39999997615814,
+      "domContentLoadedEventStart": 3511.5,
+      "domContentLoadedEventEnd": 3512.0999999940395,
+      "domComplete": 3966.699999988079,
+      "loadEventStart": 3966.899999976158,
+      "loadEventEnd": 3966.899999976158,
+      "type": "navigate",
+      "redirectCount": 0,
+      "activationStart": 0,
+      "criticalCHRestart": 0,
+      "notRestoredReasons": null,
+      "confidence": {
+        "randomizedTriggerRate": 0.4994798,
+        "value": "low"
+      }
+    }
+  },
+  "performance": {
+    "sampleFrames": 383,
+    "meanFPS": 59.668473858042006,
+    "p95FrameMs": 16.800000000000182,
+    "slowFramesOver50ms": 0,
+    "jsHeapMB": 7.344535827636719,
+    "rendererGeometries": 45,
+    "rendererTextures": 0,
+    "drawCalls": 20,
+    "triangles": 16592,
+    "readyMs": 3509.0999999940395,
+    "pixelRatio": 1.5,
+    "viewport": [
+      349,
+      437
+    ],
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+  },
+  "checks": [
+    "fullscreen start/stop",
+    "reduced motion begins idle",
+    "320px no overflow",
+    "200% root font no horizontal overflow"
+  ]
+}
