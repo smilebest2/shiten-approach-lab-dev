@@ -18,7 +18,7 @@ export function buildChunk(data){
  const local=p=>[p[0]-data.origin[0],p[1]-data.origin[1]];
  for(const b of data.buildings){const rings=b.rings.map(r=>r.map(local)),col=b.hs==='default'?[.52,.50,.44]:b.h>70?[.46,.55,.59]:[.66,.69,.67];polygon(near,rings,b.h,col,0);const area=Math.abs(signed(rings[0]))/2;if(b.h>=35||area>=650)polygon(far,rings,b.h,col,0);}
  for(const a of data.areas)polygon(ground,a.rings.map(r=>r.map(local)),a.kind==='water'?.012:.02,a.kind==='water'?[.12,.37,.45]:[.22,.37,.22]);
- for(const line of data.lines){const [a,b]=line.p.map(local),elev=line.layer>0&&line.name!=='御堂筋'?Math.min(15,line.layer*5):0,y=elev+.055;
+ for(const line of data.lines){const [a,b]=line.p.map(local),elev=line.layer>0&&!line.bridge&&line.name!=='御堂筋'?Math.min(15,line.layer*5):0,y=elev+.055;
   if(line.kind==='road'){
    ribbon(ground,a,b,line.w+(line.main?6:.6),y-.008,line.foot?[.42,.43,.40]:[.38,.39,.36]);
    ribbon(ground,a,b,line.w,y,line.foot?[.45,.45,.40]:[.12,.16,.18]);
