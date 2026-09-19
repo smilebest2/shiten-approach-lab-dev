@@ -6,6 +6,16 @@
 
 リポジトリ: https://github.com/smilebest2/shiten-approach-lab-dev / ブランチ: `dev`
 
+## 大阪を走る / 実験02
+
+[大阪の街を体験する](https://smilebest2.github.io/shiten-approach-lab-dev/osaka.html)。御堂筋の実在道路に沿って、難波・心斎橋・本町・梅田の約4.2kmを走る。高さ0.2 / 1 / 1.7 / 10 / 100m、速度5 / 30 / 100 / 300km/h。開始地点と南北方向を選び、開始／一時停止する。外部地図APIへの閲覧時アクセスはない。
+
+データ・調査・検証・制約は [OSAKA.md](OSAKA.md)、測定記録は [OSAKA-QA.json](OSAKA-QA.json)。建物輪郭・道路は実在OSMデータ、高さ不明の建物や外壁は簡略化。道路の一方通行を含む交通規則・高低差は再現しない仮想走行。OSM由来データは[別ライセンス](osaka/LICENSE.md)（ODbL）で、ソーススナップショットと変換コードも公開する。
+
+`osaka.html / osaka.css / osaka-app.js` は画面と描画、`osaka-engine.js` は実座標の走行、`osaka-stream.js` は保持・先読み・破棄、`osaka-worker.js / osaka-mesh.js` は別スレッドでの形状生成、`osaka/` は静的チャンク。既存の接近実験と同じThree.jsを使用する。
+
+データ再生成は `osaka/source.json.gz` を展開して任意のJSONファイルに保存し、`node prepare-osaka.mjs <JSONのパス>` を実行する。クエリは `osaka/query.txt`。公開済みスナップショットの再利用でAPI再取得は不要。
+
 球体の最小実験、犬の高さから人へ、虫の高さから葉へ、宇宙船から惑星へ、の4つの体験がある。全シナリオで同じ接近エンジンを使う。Three.js 0.180.0をローカル同梱し、実行時のCDN・サーバー処理・DB・外部APIは使わない。
 
 ## 起動

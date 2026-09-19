@@ -1,0 +1,1 @@
+[out:json][timeout:180][bbox:34.661,135.491,34.708,135.510];(way[building];relation[building][type=multipolygon];way[highway];way[railway];way[waterway];way[natural=water];relation[natural=water][type=multipolygon];way[landuse];way[leisure=park];relation[leisure=park][type=multipolygon];);out body geom;
